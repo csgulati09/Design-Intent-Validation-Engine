@@ -1,0 +1,48 @@
+{
+  "videoMetadata": {
+    "path": "/Users/chandeep/Documents/Workspace/Personal/Drizz/test/animation.MP4",
+    "durationSeconds": 0,
+    "frameSampling": {
+      "mode": "uniform",
+      "fps": 1,
+      "frameCount": 17
+    }
+  },
+  "testSteps": [
+    {
+      "id": "step1",
+      "description": "Animation",
+      "assertions": [
+        {
+          "id": "step1-assertion1",
+          "text": "On opening the app, the animation should be there and it should be visible to the user",
+          "verdict": "pass",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "timestampSeconds": 1,
+              "frameIndex": 1,
+              "description": "BookMyShow splash screen displayed with white \"bookmyshow\" logo centered on red background, with tagline \"It All Starts Here\" beneath the logo."
+            },
+            {
+              "timestampSeconds": 2,
+              "frameIndex": 2,
+              "description": "Animation frame showing white line-art entertainment icons on red background: film reel (upper left), microphone (center-right), vintage microphone (center-bottom), theater mask (lower left), and video/film frame icon (lower right)."
+            },
+            {
+              "timestampSeconds": 3,
+              "frameIndex": 3,
+              "description": "BookMyShow logo displayed alone on red background without additional animated elements, indicating animation progression."
+            },
+            {
+              "timestampSeconds": 4,
+              "frameIndex": 4,
+              "description": "Transition to main app content showing \"TICKET TO HOLIMOOD\" promotional overlay, indicating animation sequence completion."
+            }
+          ],
+          "explanation": "Animation sequence confirmed during app launch. At t=1s, the BookMyShow branded splash screen with logo and tagline \"It All Starts Here\" appeared. At t=2s, animated entertainment-themed icons (film reel, microphone, theater mask, video frame) were displayed on the red background. At t=3s, the logo remained visible without additional elements. This multi-stage animation sequence was clearly visible to users during the app opening phase before transitioning to the main content at t=4s."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "videoMetadata": {
+    "path": "/Users/chandeep/Documents/Workspace/Personal/Drizz/test/animation2.MP4",
+    "durationSeconds": 0,
+    "frameSampling": {
+      "mode": "uniform",
+      "fps": 1,
+      "frameCount": 9
+    }
+  },
+  "testSteps": [
+    {
+      "id": "step1",
+      "description": "Animation",
+      "assertions": [
+        {
+          "id": "step1-assertion1",
+          "text": "On opening the app, the animation should be there and it should be visible to the user",
+          "verdict": "pass",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "timestampSeconds": 1,
+              "frameIndex": 1,
+              "description": "Initial splash screen displayed with yellow/gold background showing 'blink' logo, tagline 'India's Last Minute App', and 'AN ETERNAL COMPANY' identifier."
+            },
+            {
+              "timestampSeconds": 2,
+              "frameIndex": 2,
+              "description": "Splash screen transitioned to dark background. Full 'blinkit' branding visible with yellow 'blink' and green 'it' text. Same tagline and company identifier remain present, demonstrating animated transition."
+            }
+          ],
+          "explanation": "Animation is present and visible during app launch. The splash screen transitions from a yellow/gold background with 'blink' logo to a dark background with the full 'blinkit' branding over a two-second sequence (t=1s to t=2s)."
+        }
+      ]
+    },
+    {
+      "id": "step2",
+      "description": "Animation search",
+      "assertions": [
+        {
+          "id": "step2-assertion1",
+          "text": "When the app is open look for the search box. The suggested text should be suggesting the text to write in the search box and the animation of typing should be there",
+          "verdict": "pass",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "timestampSeconds": 3,
+              "frameIndex": 3,
+              "description": "Search bar displays 'Search \"holi\"' as suggested text on the home screen."
+            },
+            {
+              "timestampSeconds": 4,
+              "frameIndex": 4,
+              "description": "Search bar text changed to 'Search \"disposables\"' with character deletion/typing animation briefly visible."
+            },
+            {
+              "timestampSeconds": 5,
+              "frameIndex": 5,
+              "description": "Search bar shows 'Search \"disposab\"' (partial text), demonstrating mid-typing animation state."
+            },
+            {
+              "timestampSeconds": 6,
+              "frameIndex": 6,
+              "description": "Search bar updated to 'Search \"gulal\"', continuing the typing animation sequence."
+            },
+            {
+              "timestampSeconds": 7,
+              "frameIndex": 7,
+              "description": "Search bar displays 'Search \"sweets\"', showing continued cycling of suggested search terms."
+            },
+            {
+              "timestampSeconds": 8,
+              "frameIndex": 8,
+              "description": "Search bar shows 'Search \"sweets\"' (completed state), confirming the typing animation cycle."
+            }
+          ],
+          "explanation": "Search box is visible with suggested search text that animates through different suggestions. Between t=3s and t=8s, the search bar displays typing animation cycling through multiple suggested search terms: 'holi', 'disposables', 'disposab', 'gulal', and 'sweets'."
+        }
+      ]
+    },
+    {
+      "id": "step3",
+      "description": "Animation holi festival",
+      "assertions": [
+        {
+          "id": "step3-assertion1",
+          "text": "On the app there should be complete animation of holi festival",
+          "verdict": "pass",
+          "confidence": 0.85,
+          "evidence": [
+            {
+              "timestampSeconds": 3,
+              "frameIndex": 3,
+              "description": "Banner displays festive Holi graphics with 'PRICE DROP ON GULAL' promotion text visible."
+            },
+            {
+              "timestampSeconds": 5,
+              "frameIndex": 5,
+              "description": "Banner displays 'HOLI HAI!' text prominently with festive styling against pink background."
+            },
+            {
+              "timestampSeconds": 7,
+              "frameIndex": 7,
+              "description": "Banner text shows partial 'OLI HAI!' with 'POW!' graphic element appearing, indicating animated content transition."
+            },
+            {
+              "timestampSeconds": 8,
+              "frameIndex": 8,
+              "description": "Banner shows 'POWERED BY' text with Coca-Cola and other brand logos visible, completing the animation cycle with sponsor information."
+            }
+          ],
+          "explanation": "Holi festival animation is present on the banner. Between t=3s and t=8s, the promotional banner displays animated Holi-themed content including 'PRICE DROP ON GULAL', 'HOLI HAI!' text with festive styling, 'POW!' graphic elements, and sponsor logos, demonstrating a complete cycling animation sequence."
+        }
+      ]
+    }
+  ]
+}

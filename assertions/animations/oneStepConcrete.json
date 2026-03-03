@@ -1,0 +1,9 @@
+[
+    {
+        "id": "step1-assertion1",
+        "text": "On opening the app, the animation should be there and it should be visible to the user",
+        "type": "concrete",
+        "testStepId": "step1",
+        "testStepDescription": "Animation"
+    }
+]
